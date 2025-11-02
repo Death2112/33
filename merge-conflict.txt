@@ -1,1 +1,11 @@
+git checkout -b feature-branch
+# Измените файл merge-conflict.txt:
+# Замените "Вторая строка" на "Изменение из feature-branch"
+git add merge-conflict.txt
+git commit -m "Изменение в feature-branch"
 
+git checkout main
+# Измените тот же файл:
+# Замените "Вторая строка" на "Изменение из main"
+git add merge-conflict.txt
+git commit -m "Изменение в main"
